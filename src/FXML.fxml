@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="105.0" prefWidth="755.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="82.0" prefWidth="759.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="26.0" prefWidth="755.0">
+                     <children>
+                        <Label text="Add People" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="84.0" prefWidth="721.0">
+                     <children>
+                        <GridPane prefHeight="72.0" prefWidth="500.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="btnMC" mnemonicParsing="false" onAction="#clickMC" text="Male Child" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <Button fx:id="btnFT" mnemonicParsing="false" onAction="#clickFT" text="Female Teenager" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <Button fx:id="btnFC" mnemonicParsing="false" onAction="#clickFC" text="Female Child" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                              <Button fx:id="btnMA" mnemonicParsing="false" onAction="#clickMA" text="Male Adult" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <Button fx:id="btnMT" mnemonicParsing="false" onAction="#clickMT" text="Male Teenager" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <Button fx:id="btnFA" alignment="CENTER" mnemonicParsing="false" onAction="#clickFA" text="Female Adult" GridPane.halignment="CENTER" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox prefHeight="369.0" prefWidth="287.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="287.0">
+               <children>
+                  <Label text="Add Behaviour" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="287.0">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="17.0" prefWidth="94.0" text="Female Adult" />
+                  <GridPane prefHeight="57.0" prefWidth="183.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnFASwim" mnemonicParsing="false" onAction="#FAswim" prefHeight="25.0" prefWidth="57.0" text="Swim" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnFAWalk" mnemonicParsing="false" onAction="#FAwalk" prefHeight="25.0" prefWidth="57.0" text="Walk" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnFARun" mnemonicParsing="false" onAction="#FArun" prefHeight="25.0" prefWidth="54.0" text="Run" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="287.0">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="17.0" prefWidth="94.0" text="Female Teenager" />
+                  <GridPane prefHeight="94.0" prefWidth="183.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnFTSwim" mnemonicParsing="false" onAction="#FTswim" prefHeight="25.0" prefWidth="56.0" text="Swim" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnFTWalk" mnemonicParsing="false" onAction="#FTwalk" prefHeight="25.0" prefWidth="57.0" text="Walk" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnFTRun" mnemonicParsing="false" onAction="#FTrun" prefHeight="25.0" prefWidth="54.0" text="Run" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="287.0">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="17.0" prefWidth="95.0" text="Female Child" />
+                  <GridPane prefHeight="58.0" prefWidth="180.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnFCSwim" mnemonicParsing="false" onAction="#FCswim" prefHeight="25.0" prefWidth="57.0" text="Swim" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnFCWalk" mnemonicParsing="false" onAction="#FCwalk" prefHeight="25.0" prefWidth="57.0" text="Walk" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnFCRun" mnemonicParsing="false" onAction="#FCrun" prefHeight="25.0" prefWidth="54.0" text="Run" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="287.0">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="17.0" prefWidth="94.0" text="Male Adult" />
+                  <GridPane prefHeight="94.0" prefWidth="183.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnMASwim" mnemonicParsing="false" onAction="#MAswim" prefHeight="25.0" prefWidth="58.0" text="Swim" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnMAWalk" mnemonicParsing="false" onAction="#MAwalk" prefHeight="25.0" prefWidth="57.0" text="Walk" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnMARun" mnemonicParsing="false" onAction="#MArun" prefHeight="25.0" prefWidth="54.0" text="Run" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="287.0">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="17.0" prefWidth="94.0" text="Male Teenager" />
+                  <GridPane prefHeight="94.0" prefWidth="183.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnMTSwim" mnemonicParsing="false" onAction="#MTswim" prefHeight="25.0" prefWidth="58.0" text="Swim" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnMTWalk" mnemonicParsing="false" onAction="#MTwalk" prefHeight="25.0" prefWidth="57.0" text="Walk" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnMTRun" mnemonicParsing="false" onAction="#MTrun" prefHeight="25.0" prefWidth="54.0" text="Run" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="287.0">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="17.0" prefWidth="94.0" text="Male Child" />
+                  <GridPane prefHeight="94.0" prefWidth="183.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnMCSwim" mnemonicParsing="false" onAction="#MCswim" prefHeight="25.0" prefWidth="58.0" text="Swim" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnMCWalk" mnemonicParsing="false" onAction="#MCwalk" prefHeight="25.0" prefWidth="57.0" text="Walk" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btnMCRun" mnemonicParsing="false" onAction="#MCrun" prefHeight="25.0" prefWidth="54.0" text="Run" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="370.0" prefWidth="468.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="468.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="111.0" text="Toggle" />
+                  <GridPane prefHeight="43.0" prefWidth="194.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#onClickDay" prefHeight="25.0" prefWidth="64.0" text="Day" GridPane.halignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#onclickNight" prefHeight="25.0" prefWidth="64.0" text="Night" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="262.0" prefWidth="468.0">
+               <children>
+                  <AnchorPane prefHeight="261.0" prefWidth="470.0">
+                     <children>
+                        <ImageView fx:id="imgBeach" fitHeight="297.0" fitWidth="571.0" layoutX="-3.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@assets/DayBg.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgMC" fitHeight="56.0" fitWidth="53.0" layoutX="358.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFC" fitHeight="40.0" fitWidth="38.0" layoutX="387.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMT" fitHeight="58.0" fitWidth="23.0" layoutX="315.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFT" fitHeight="46.0" fitWidth="30.0" layoutX="340.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMA" fitHeight="89.0" fitWidth="57.0" layoutX="452.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFA" fitHeight="77.0" fitWidth="33.0" layoutX="448.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFCSwim" fitHeight="26.0" fitWidth="25.0" layoutX="198.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFCWalk" fitHeight="35.0" fitWidth="26.0" layoutX="175.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFCRun" fitHeight="103.0" fitWidth="51.0" layoutX="397.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFTSwim" fitHeight="64.0" fitWidth="81.0" layoutX="25.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFTWalk" fitHeight="57.0" fitWidth="54.0" layoutX="278.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFTRun" fitHeight="59.0" fitWidth="56.0" layoutX="76.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFASwim" fitHeight="47.0" fitWidth="40.0" layoutX="26.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="82.0" fitWidth="87.0" layoutX="136.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMCSwim" fitHeight="47.0" fitWidth="42.0" layoutX="140.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMCWalk" fitHeight="33.0" fitWidth="29.0" layoutX="247.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMCRun" fitHeight="52.0" fitWidth="46.0" layoutX="229.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMTSwim" fitHeight="93.0" fitWidth="94.0" layoutX="60.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMTWalk" fitHeight="78.0" fitWidth="104.0" layoutX="328.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMTRun" fitHeight="69.0" fitWidth="49.0" layoutX="252.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMASwim" fitHeight="57.0" fitWidth="51.0" layoutX="81.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMAWalk" fitHeight="135.0" fitWidth="85.0" layoutX="284.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgMARun" fitHeight="133.0" fitWidth="38.0" layoutX="192.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFAWalk" fitHeight="94.0" fitWidth="88.0" layoutX="421.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgFARun" fitHeight="81.0" fitWidth="76.0" layoutX="154.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="shawarmaStall" fitHeight="69.0" fitWidth="52.0" layoutX="522.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/shawarma.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="shawarmaDialog" fitHeight="45.0" fitWidth="71.0" layoutX="495.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@assets/ChickenShawarma.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="468.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="119.0" text="Buy Shawarma " />
+                  <GridPane prefHeight="43.0" prefWidth="173.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#clickChicShawarma" prefHeight="25.0" prefWidth="72.0" text="Chicken " GridPane.halignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#clickVegeShawarma" prefHeight="25.0" prefWidth="65.0" text="Vege" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
